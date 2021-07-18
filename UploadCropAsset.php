@@ -24,8 +24,8 @@ class UploadCropAsset extends AssetBundle
 		$this->js[] = (YII_DEBUG ? 'js/uploadcrop.js' : 'js/uploadcrop.min.js');
 		$this->js[] = (YII_DEBUG ? 'js/cropper.js' : 'js/cropper.min.js');
 		
-		$this->css[] = (YII_DEBUG ? 'css/cropper.css' : 'css/cropper.min.css');
-		$this->css[] = (YII_DEBUG ? 'css/uploadcrop.css' : 'css/uploadcrop.min.css');
+		$this->css[] = (YII_DEBUG ? 'css/cropper.css?v=2' : 'css/cropper.min.css');
+		$this->css[] = (YII_DEBUG ? 'css/uploadcrop.css?v=2' : 'css/uploadcrop.min.css');
 		parent::init();
 	}
 }

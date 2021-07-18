@@ -18,7 +18,7 @@
 }
 
 .uploadcrop input {
-    display: none;
+    display: none !important;
 }
 
 .uploadcrop .cropper-wrapper {

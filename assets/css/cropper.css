@@ -7,7 +7,9 @@
  *
  * Date: 2017-01-21T11:58:14.219Z
  */
-
+.uploadcrop .fade.show {
+    opacity: 1!important;
+}
 .cropper-container {
     font-size: 0;
     line-height: 0;

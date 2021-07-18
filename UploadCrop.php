@@ -14,7 +14,9 @@ namespace uitrick\yii2\widget\upload\crop;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\base\Widget;
-use yii\bootstrap\Modal;
+
+use yii\bootstrap4\Modal;
+use yii\bootstrap4\BootstrapWidgetTrait;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\widgets\ActiveForm;
@@ -123,7 +125,7 @@ class UploadCrop extends Widget
 
 		Modal::begin([
 			'id' => 'cropper-modal-'. $this->imageOptions['id'],
-			'header' => '<h2>Crop image</h2>',
+			'title' => '<h2>Crop image</h2>',
 			'closeButton' => [],
 			'footer' => '<div class="row cropper-btns"><div class="col-md-6">' . Html::button('Cancel', ['id' => $this->imageOptions['id'].'_button_cancel', 'class' => 'btn btn-default btn-block', 'data-dismiss' => 'modal']) . '</div><div class="col-md-6">' . Html::button('Accept', ['id' => $this->imageOptions['id'].'_button_accept', 'class' => 'btn btn-primary btn-block cropper-done']) . '</div></div>',
 			'size' => Modal::SIZE_LARGE,
@@ -154,7 +156,7 @@ class UploadCrop extends Widget
 
 		Modal::end();
 
-		echo Html::endTag('div');
+//		echo Html::endTag('div');
 
 		$view = $this->getView();
 
