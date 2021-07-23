@@ -156,7 +156,8 @@ class UploadCrop extends Widget
 
 		Modal::end();
 
-
+		echo Html::endTag('div');
+		
 		$view = $this->getView();
 
 		UploadCropAsset::register($view);
